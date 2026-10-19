@@ -18,6 +18,14 @@ A 3D-printable biped robot built around Arduino UNO Q and 15 serial servos.
 
 </div>
 
+> **About this fork.** This is a fork of [LuwuDynamics/xgoduck_hardware](https://github.com/LuwuDynamics/xgoduck_hardware). It adds:
+>
+> - **[UNO Q + expansion-board cover](cad/uno_q_cover/)**: a lightweight (≈ 12–13 g) clip-on cover that retrofits an already-built robot. It snaps onto the expansion-board edge without tools, covers both boards, and leaves the cable end, USB‑C, power switch and DC jack open. STL, STEP and editable SolidCraft source are included.
+> - **[Whole-robot fit-check assembly](cad/uno_q_cover/xgoduck_assembly_with_cover.solidcraft)**: XGO-Duck in its zero pose, built from the xgoduck_rl simulation model, with the UNO Q, expansion board, battery case, a 2 × 18650 (2S, 8.4 V) pack and the cover in place. It is checked for interference, including a full inward hip roll.
+> - **Measured mass:** the complete robot with battery, back case and boards weighs **825 g**.
+>
+> Everything else follows upstream. See [cad/uno_q_cover/README.md](cad/uno_q_cover/README.md) for design details, assumptions and printing notes.
+
 ## Meet XGO-Duck
 
 XGO-Duck is a duck-shaped biped robot adapted by **Luwu Dynamics** from Pollen Robotics' **Microduck**. It combines a printable structure, fifteen Feetech 1910 servos, an Arduino UNO Q, and a custom expansion board with an IMU and servo interfaces.
@@ -149,6 +157,7 @@ The runtime includes **walk, get-up and pick policies**, plus separate mouth con
 | [PCBA/ArduinoUnoQ.DWG](PCBA/ArduinoUnoQ.DWG) · [STEP model](PCBA/ArduinoUnoQ.step) | Board outline and mechanical integration model |
 | [PCBA/BOM.xlsx](PCBA/BOM.xlsx) · [Pick-and-place data](PCBA/Pick%20Place%20for%20ArduinoUnoQ.csv) | Expansion-board assembly materials and placement coordinates |
 | [docs/](docs/) | Build, printing, BOM and troubleshooting notes |
+| [cad/uno_q_cover/](cad/uno_q_cover/) | *Fork addition:* clip-on UNO Q stack cover (STL/STEP/SolidCraft) and whole-robot fit-check assembly |
 
 ## From hardware to your own behavior
 
