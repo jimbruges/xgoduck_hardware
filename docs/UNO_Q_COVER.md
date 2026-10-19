@@ -48,7 +48,7 @@ Print roof down, no supports. PETG is preferred for the snap tabs (≈ 1 % bendi
 | Battery case | [structure/battery.stl](../structure/battery.stl), registered onto the trunk together with [structure/body.stl](../structure/body.stl), which shares its CAD frame |
 | Battery | Two 18650 cells (Ø18.5 × 65.5 mm including wrap) as a 2S 8.4 V pack, with a series nickel strip |
 
-<img src="../media/uno_q_cover/xgoduck_assembly_rear.png" alt="Full XGO-Duck assembly with the orange UNO Q cover on its back" width="480"> <img src="../media/uno_q_cover/battery_pack_in_case.png" alt="Two 18650 cells seated in the battery case behind the UNO Q stack, with legs and cover hidden" width="420">
+<img src="../media/uno_q_cover/xgoduck_assembly_rear.png" alt="Full XGO-Duck assembly with the orange UNO Q cover on its back" width="480"> <img src="../media/uno_q_cover/battery_pack_in_case.png" alt="Two 18650 cells seated in the battery case between the body and the UNO Q stack, with legs and cover hidden" width="420">
 
 Results in SolidCraft:
 
@@ -62,6 +62,17 @@ The UNO Q stack's distance from the body is an estimate: the UNO Q's underside c
 ## Measured mass
 
 The complete robot **with battery, back case (this cover) and boards weighs 825 g**.
+
+### Used for training
+
+The assembly's frame is the simulation model's trunk frame, offset 129.394 mm upward. The [xgoduck_rl `cad-battery` branch](https://github.com/jimbruges/xgoduck_rl/tree/cad-battery) takes its added masses from this assembly:
+
+| Mass | Position in the trunk frame | Estimated mass |
+| --- | --- | ---: |
+| 2S pack + battery case | x −20, z −31 mm | ~95 g |
+| UNO Q + expansion board + cover + connectors | x −51, z −31 mm | ~48 g |
+
+The assembly uses one default density for every part, so these masses are estimates scaled to add up to the measured 825 g. Weighing the pack and the UNO Q stack separately would pin them down.
 
 ## Credits
 
