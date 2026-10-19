@@ -24,11 +24,6 @@ A 3D-printable biped robot built around Arduino UNO Q and 15 serial servos.
 > - **[Whole-robot fit-check assembly](structure/assembly/xgoduck_full_assembly.solidcraft)**: XGO-Duck in its zero pose, built from the xgoduck_rl simulation model, with the UNO Q, expansion board, battery case, a 2 × 18650 (2S, 8.4 V) pack and the cover in place. It is checked for interference, including a full inward hip roll.
 > - **Measured mass:** the complete robot with battery, back case and boards weighs **825 g**.
 >
-> Companion forks for the same UNO Q build:
->
-> - [jimbruges/xgoduck_runtime_arduino](https://github.com/jimbruges/xgoduck_runtime_arduino) (branch `calibration-tools`): staged calibration with CAD zero-pose guides, joint direction check, Bluetooth controller, walk tuning and a flight recorder.
-> - [jimbruges/xgoduck_rl](https://github.com/jimbruges/xgoduck_rl) (branch `cad-battery`): the walk policy retrained with the measured mass, with the battery and UNO Q stack placed where this fork's assembly has them.
->
 > - **Companion forks:**
 >   - [jimbruges/xgoduck_runtime_arduino](https://github.com/jimbruges/xgoduck_runtime_arduino/tree/calibration-tools) (branch `calibration-tools`): staged calibration with CAD zero-pose guides, a joint-direction check, Bluetooth controller support, walk tuning and a flight recorder.
 >   - [jimbruges/xgoduck_rl](https://github.com/jimbruges/xgoduck_rl/tree/cad-battery) (branch `cad-battery`): the walk policy retrained with the measured 825 g, with the battery and UNO Q stack placed where this fork's assembly has them.
