@@ -10,6 +10,7 @@ Quantities below follow the repository naming rule: `2x_` means two copies; othe
 | [2x_foot_bottom_tpu.stl](../structure/2x_foot_bottom_tpu.stl) | 2 | TPU indicated by filename |
 | [2x_hip_rol_output.stl](../structure/2x_hip_rol_output.stl) | 2 | Rigid material: confirm profile |
 | [2x_hip_rol_shell.stl](../structure/2x_hip_rol_shell.stl) | 2 | Rigid material: confirm profile |
+| [2x_hip_yaw2rol.STL](../structure/2x_hip_yaw2rol.STL) | 2 | Rigid material: confirm profile |
 | [2x_neck.stl](../structure/2x_neck.stl) | 2 | Rigid material: confirm profile |
 | [2x_shank.stl](../structure/2x_shank.stl) | 2 | Rigid material: confirm profile |
 | [2x_thigh_support.stl](../structure/2x_thigh_support.stl) | 2 | Rigid material: confirm profile |
@@ -24,7 +25,6 @@ Quantities below follow the repository naming rule: `2x_` means two copies; othe
 | [head_servo_support.stl](../structure/head_servo_support.stl) | 1 | Rigid material: confirm profile |
 | [head_shell.stl](../structure/head_shell.stl) | 1 | Rigid material: confirm profile |
 | [head_yaw.STL](../structure/head_yaw.STL) | 1 | Rigid material: confirm profile |
-| [hip_yaw2rol.STL](../structure/hip_yaw2rol.STL) | 1 | Rigid material: confirm profile |
 | [hip_yaw_support.STL](../structure/hip_yaw_support.STL) | 1 | Rigid material: confirm profile |
 | [jaw.stl](../structure/jaw.stl) | 1 | Rigid material: confirm profile |
 | [left_foot.stl](../structure/left_foot.stl) | 1 | Rigid material: confirm profile |
@@ -33,9 +33,12 @@ Quantities below follow the repository naming rule: `2x_` means two copies; othe
 | [right_foot.stl](../structure/right_foot.stl) | 1 | Rigid material: confirm profile |
 | [thigh_left_shell.stl](../structure/thigh_left_shell.stl) | 1 | Rigid material: confirm profile |
 | [thigh_right_shell.stl](../structure/thigh_right_shell.stl) | 1 | Rigid material: confirm profile |
+| [uno_q_cover.stl](../structure/uno_q_cover.stl) | 1 | Fork addition, optional. PETG preferred for the snap tabs; print roof down, no supports. See [UNO_Q_COVER.md](UNO_Q_COVER.md) |
 
 ## Print profile still required
 
 The release needs tested values for material brand/type, nozzle, layer height, walls, infill, supports, orientation, scale and tolerances, with finished-part photographs. TPU hardness is also unspecified. No recommended print time or filament mass has been measured here.
 
 Before a full print, check one servo mount and one bearing seat, inspect left/right orientation and verify cable clearance. Record your settings and report fit results with the part filename. A slicer project from a different revision is not a verified profile for these STLs.
+
+STEP and SolidCraft sources for the fork's UNO Q cover are in [structure/source/](../structure/source/), and a whole-robot SolidCraft fit-check assembly is in [structure/assembly/](../structure/assembly/). Neither folder holds print files.

@@ -5,6 +5,6 @@
 # Local source footage
 /a clean somersault - CyberBionic Maker (1080p, h264).mp4
 
-# Superseded local CAD iterations
-cad/uno_q_cover/_archive/
+# Superseded local CAD iterations (kept locally, not published)
+.local_archive/
 .DS_Store
