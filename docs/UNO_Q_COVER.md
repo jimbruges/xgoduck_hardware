@@ -14,6 +14,7 @@ A lightweight clip-on cover for the Arduino UNO Q and Luwu expansion-board stack
 | [structure/source/uno_q_cover.step](../structure/source/uno_q_cover.step) | Cover solid for other CAD tools |
 | [structure/source/uno_q_cover.solidcraft](../structure/source/uno_q_cover.solidcraft) | Editable SolidCraft design: the cover's feature history plus the UNO Q and expansion-board models it was fitted against |
 | [structure/assembly/xgoduck_full_assembly.solidcraft](../structure/assembly/xgoduck_full_assembly.solidcraft) | Whole-robot fit-check assembly (see below) |
+| [structure/assembly/xgoduck_full_assembly.step](../structure/assembly/xgoduck_full_assembly.step) | The same assembly as STEP (AP242, 44 MB) for Fusion, SolidWorks, Onshape, FreeCAD and other CAD tools |
 | [media/uno_q_cover/](../media/uno_q_cover/) | Renders used on this page |
 
 ## How the cover works
@@ -38,7 +39,11 @@ Print roof down, no supports. PETG is preferred for the snap tabs (≈ 1 % bendi
 
 ## Whole-robot fit check
 
-[xgoduck_full_assembly.solidcraft](../structure/assembly/xgoduck_full_assembly.solidcraft) places the cover on a complete robot so clearances can be inspected.
+[xgoduck_full_assembly.solidcraft](../structure/assembly/xgoduck_full_assembly.solidcraft) places the cover on a complete robot so clearances can be inspected. [xgoduck_full_assembly.step](../structure/assembly/xgoduck_full_assembly.step) carries the same parts, names, colours and placement for other CAD tools:
+
+- The UNO Q, expansion board, cover and battery cells are exact solids.
+- The robot links and the battery case come from triangle meshes, so they are faceted: they can be measured and checked for interference, but not edited as features. Thirteen are closed faceted solids. `trunk_base`, `head_yaw` and `head_roll` have a few open mesh edges, so they are stored as surfaces.
+- The robot is fixed in its zero pose. For moving joints, use the xgoduck_rl simulation model.
 
 | Component | Source |
 | --- | --- |

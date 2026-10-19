@@ -143,7 +143,7 @@ flowchart TD
 | [Assembly_Guide.pdf](Assembly_Guide.pdf) | 25 页图解装配参考 |
 | [BOM.md](BOM.md) | 整机采购清单、供应商链接和电池接头参考图 |
 | [structure/](structure/) | 可打印 STL 模型 |
-| [structure/uno_q_cover.stl](structure/uno_q_cover.stl) · [source/](structure/source/) · [assembly/](structure/assembly/) | *Fork 新增：* UNO Q 与扩展板卡扣式保护盖（STL/STEP/SolidCraft），以及整机装配检查模型；整机含电池、背盖和电路板实测 825 g。详见 [docs/UNO_Q_COVER.md](docs/UNO_Q_COVER.md)（英文） |
+| [structure/uno_q_cover.stl](structure/uno_q_cover.stl) · [source/](structure/source/) · [assembly/](structure/assembly/) | *Fork 新增：* UNO Q 与扩展板卡扣式保护盖（STL/STEP/SolidCraft），以及整机装配检查模型（SolidCraft 与 STEP）；整机含电池、背盖和电路板实测 825 g。详见 [docs/UNO_Q_COVER.md](docs/UNO_Q_COVER.md)（英文） |
 | [PCBA/ArduinoUnoQ.SchDoc](PCBA/ArduinoUnoQ.SchDoc) | Altium 原理图源文件 |
 | [PCBA/ArduinoUnoQ.PcbDoc](PCBA/ArduinoUnoQ.PcbDoc) | Altium PCB 源文件 |
 | [PCBA/ArduinoUnoQ.pdf](PCBA/ArduinoUnoQ.pdf) | 板卡布局和尺寸图 |

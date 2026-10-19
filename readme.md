@@ -21,7 +21,7 @@ A 3D-printable biped robot built around Arduino UNO Q and 15 serial servos.
 > **About this fork.** This is a fork of [LuwuDynamics/xgoduck_hardware](https://github.com/LuwuDynamics/xgoduck_hardware). It adds:
 >
 > - **[UNO Q + expansion-board cover](docs/UNO_Q_COVER.md)**: a lightweight (≈ 12–13 g) clip-on cover that retrofits an already-built robot. It snaps onto the expansion-board edge without tools, covers both boards, and leaves the cable end, USB‑C, power switch and DC jack open. Print [structure/uno_q_cover.stl](structure/uno_q_cover.stl); the STEP and editable SolidCraft sources are in [structure/source/](structure/source/).
-> - **[Whole-robot fit-check assembly](structure/assembly/xgoduck_full_assembly.solidcraft)**: XGO-Duck in its zero pose, built from the xgoduck_rl simulation model, with the UNO Q, expansion board, battery case, a 2 × 18650 (2S, 8.4 V) pack and the cover in place. It is checked for interference, including a full inward hip roll.
+> - **Whole-robot fit-check assembly** ([SolidCraft](structure/assembly/xgoduck_full_assembly.solidcraft) · [STEP](structure/assembly/xgoduck_full_assembly.step)): XGO-Duck in its zero pose, built from the xgoduck_rl simulation model, with the UNO Q, expansion board, battery case, a 2 × 18650 (2S, 8.4 V) pack and the cover in place. It is checked for interference, including a full inward hip roll.
 > - **Measured mass:** the complete robot with battery, back case and boards weighs **825 g**.
 >
 > - **Companion forks:**

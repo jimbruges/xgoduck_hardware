@@ -41,4 +41,4 @@ The release needs tested values for material brand/type, nozzle, layer height, w
 
 Before a full print, check one servo mount and one bearing seat, inspect left/right orientation and verify cable clearance. Record your settings and report fit results with the part filename. A slicer project from a different revision is not a verified profile for these STLs.
 
-STEP and SolidCraft sources for the fork's UNO Q cover are in [structure/source/](../structure/source/), and a whole-robot SolidCraft fit-check assembly is in [structure/assembly/](../structure/assembly/). Neither folder holds print files.
+STEP and SolidCraft sources for the fork's UNO Q cover are in [structure/source/](../structure/source/), and a whole-robot fit-check assembly (SolidCraft and STEP) is in [structure/assembly/](../structure/assembly/). Neither folder holds print files.
