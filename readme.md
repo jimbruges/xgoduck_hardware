@@ -20,15 +20,17 @@ A 3D-printable biped robot built around Arduino UNO Q and 15 serial servos.
 
 > **About this fork.** This is a fork of [LuwuDynamics/xgoduck_hardware](https://github.com/LuwuDynamics/xgoduck_hardware). It adds:
 >
-> - **[UNO Q + expansion-board cover](docs/UNO_Q_COVER.md)**: a lightweight (≈ 12–13 g) clip-on cover that retrofits an already-built robot. It snaps onto the expansion-board edge without tools, covers both boards, and leaves the cable end, USB‑C, power switch and DC jack open. Print [structure/uno_q_cover.stl](structure/uno_q_cover.stl); the STEP and editable SolidCraft sources are in [structure/source/](structure/source/).
-> - **Whole-robot fit-check assembly** ([SolidCraft](structure/assembly/xgoduck_full_assembly.solidcraft) · [STEP](structure/assembly/xgoduck_full_assembly.step)): XGO-Duck in its zero pose, built from the xgoduck_rl simulation model, with the UNO Q, expansion board, battery case, a 2 × 18650 (2S, 8.4 V) pack and the cover in place. It is checked for interference, including a full inward hip roll.
-> - **Measured mass:** the complete robot with battery, back case and boards weighs **825 g**.
+> - **[Back cover and battery mount](docs/BACK_COVER.md)**: a rigid, screw-on cover that protects the UNO Q and expansion board. It is held by four M2 × 6 screws into bosses on a modified battery case, so knocks go into the frame rather than the boards.
+>   - **If you build from this fork, print [structure/battery_mount.stl](structure/battery_mount.stl) instead of `structure/battery.stl`, plus [structure/back_cover.stl](structure/back_cover.stl).**
+>   - The STEP and editable SolidCraft sources are in [structure/source/](structure/source/).
+> - **Whole-robot fit-check assembly** ([SolidCraft](structure/assembly/xgoduck_full_assembly.solidcraft) · [STEP](structure/assembly/xgoduck_full_assembly.step)): XGO-Duck in its zero pose, built from the xgoduck_rl simulation model. It includes the UNO Q, expansion board, battery mount, a 2 × 18650 (2S, 8.4 V) pack and the back cover, and has been checked for interference.
+> - **Measured mass:** the complete robot weighed **825 g** with battery, boards and the earlier clip-on cover. The back cover and battery mount add about 11 g.
 >
 > - **Companion forks:**
 >   - [jimbruges/xgoduck_runtime_arduino](https://github.com/jimbruges/xgoduck_runtime_arduino/tree/calibration-tools) (branch `calibration-tools`): staged calibration with CAD zero-pose guides, a joint-direction check, Bluetooth controller support, walk tuning and a flight recorder.
->   - [jimbruges/xgoduck_rl](https://github.com/jimbruges/xgoduck_rl/tree/cad-battery) (branch `cad-battery`): the walk policy retrained with the measured 825 g, with the battery and UNO Q stack placed where this fork's assembly has them.
+>   - [jimbruges/xgoduck_rl](https://github.com/jimbruges/xgoduck_rl/tree/cad-battery) (branch `cad-battery`): the walk policy retrained with the measured 825 g, with the battery and UNO Q stack placed where this fork's earlier assembly had them. The current back cover moves the stack 6.9 mm closer to the body and adds about 11 g; see [Used for training](docs/BACK_COVER.md#used-for-training).
 >
-> Everything else follows upstream. See [docs/UNO_Q_COVER.md](docs/UNO_Q_COVER.md) for design details, assumptions and printing notes.
+> Everything else follows upstream. See [docs/BACK_COVER.md](docs/BACK_COVER.md) for what to print, assembly steps, design details and assumptions.
 
 ## Meet XGO-Duck
 
@@ -154,14 +156,14 @@ The runtime includes **walk, get-up and pick policies**, plus separate mouth con
 | --- | --- |
 | [Assembly_Guide.pdf](Assembly_Guide.pdf) | 25-page illustrated assembly reference |
 | [BOM.md](BOM.md) | Whole-robot purchasing list, supplier links and battery reference image |
-| [structure/](structure/) | Printable STL models, including the fork's `uno_q_cover.stl` |
+| [structure/](structure/) | Printable STL models, including the fork's `back_cover.stl` and `battery_mount.stl` (print it instead of `battery.stl`) |
 | [PCBA/ArduinoUnoQ.SchDoc](PCBA/ArduinoUnoQ.SchDoc) | Altium schematic source |
 | [PCBA/ArduinoUnoQ.PcbDoc](PCBA/ArduinoUnoQ.PcbDoc) | Altium PCB source |
 | [PCBA/ArduinoUnoQ.pdf](PCBA/ArduinoUnoQ.pdf) | Board layout and dimension drawing |
 | [PCBA/ArduinoUnoQ.DWG](PCBA/ArduinoUnoQ.DWG) · [STEP model](PCBA/ArduinoUnoQ.step) | Board outline and mechanical integration model |
 | [PCBA/BOM.xlsx](PCBA/BOM.xlsx) · [Pick-and-place data](PCBA/Pick%20Place%20for%20ArduinoUnoQ.csv) | Expansion-board assembly materials and placement coordinates |
-| [docs/](docs/) | Build, printing, BOM, troubleshooting and UNO Q cover notes |
-| [structure/source/](structure/source/) · [structure/assembly/](structure/assembly/) | *Fork addition:* STEP/SolidCraft sources for the UNO Q cover, and the whole-robot SolidCraft fit-check assembly ([details](docs/UNO_Q_COVER.md)) |
+| [docs/](docs/) | Build, printing, BOM, troubleshooting and back cover notes |
+| [structure/source/](structure/source/) · [structure/assembly/](structure/assembly/) | *Fork addition:* STEP/SolidCraft sources for the back cover and battery-mount bosses, and the whole-robot fit-check assembly in SolidCraft and STEP ([details](docs/BACK_COVER.md)) |
 
 ## From hardware to your own behavior
 

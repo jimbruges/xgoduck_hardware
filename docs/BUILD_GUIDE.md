@@ -28,6 +28,8 @@ Deploy the [runtime](https://github.com/LuwuDynamics/xgoduck_runtime_arduino) on
 | 22–23 | IDs 30/31 and the M3 × 16 screw locations. |
 | 24–25 | Follow final pictured assembly and inspect the completed routing. |
 
+**This fork:** wherever the PDF shows the battery case, use [battery_mount.stl](../structure/battery_mount.stl) instead of `battery.stl`. It mounts the same way and adds four screw bosses. Once the UNO Q and expansion board are fitted and every cable is connected, fit the [back cover](BACK_COVER.md) with 4 × M2 × 6 countersunk self-tapping screws.
+
 Before closing each section, check that the harness cannot be pinched and has slack through the intended movement. Compare mirrored parts to the photos; do not assume left and right mountings are identical. Do not force printed bearing seats or infer tightening torque from screw size.
 
 ## 4. Inspect before enabling motion

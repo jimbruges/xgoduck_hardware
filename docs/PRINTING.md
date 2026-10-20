@@ -14,7 +14,9 @@ Quantities below follow the repository naming rule: `2x_` means two copies; othe
 | [2x_neck.stl](../structure/2x_neck.stl) | 2 | Rigid material: confirm profile |
 | [2x_shank.stl](../structure/2x_shank.stl) | 2 | Rigid material: confirm profile |
 | [2x_thigh_support.stl](../structure/2x_thigh_support.stl) | 2 | Rigid material: confirm profile |
-| [battery.stl](../structure/battery.stl) | 1 | Rigid material: confirm profile |
+| [battery.stl](../structure/battery.stl) | 1 | Rigid material: confirm profile. **This fork: print [battery_mount.stl](../structure/battery_mount.stl) instead**, which is the same case with screw bosses for the back cover |
+| [battery_mount.stl](../structure/battery_mount.stl) | 1 | Fork addition, replaces `battery.stl`. PETG, 3+ perimeters; print body side down like `battery.stl`, with small supports under the two cable-end bosses. See [BACK_COVER.md](BACK_COVER.md) |
+| [back_cover.stl](../structure/back_cover.stl) | 1 | Fork addition. PETG; already oriented roof down, no supports. Fixed with 4 × M2 × 6 countersunk self-tapping screws (BOM item 7). See [BACK_COVER.md](BACK_COVER.md) |
 | [body.stl](../structure/body.stl) | 1 | Rigid material: confirm profile |
 | [body_left_shell.stl](../structure/body_left_shell.stl) | 1 | Rigid material: confirm profile |
 | [body_right_shell.stl](../structure/body_right_shell.stl) | 1 | Rigid material: confirm profile |
@@ -33,7 +35,6 @@ Quantities below follow the repository naming rule: `2x_` means two copies; othe
 | [right_foot.stl](../structure/right_foot.stl) | 1 | Rigid material: confirm profile |
 | [thigh_left_shell.stl](../structure/thigh_left_shell.stl) | 1 | Rigid material: confirm profile |
 | [thigh_right_shell.stl](../structure/thigh_right_shell.stl) | 1 | Rigid material: confirm profile |
-| [uno_q_cover.stl](../structure/uno_q_cover.stl) | 1 | Fork addition, optional. PETG preferred for the snap tabs; print roof down, no supports. See [UNO_Q_COVER.md](UNO_Q_COVER.md) |
 
 ## Print profile still required
 
@@ -41,4 +42,4 @@ The release needs tested values for material brand/type, nozzle, layer height, w
 
 Before a full print, check one servo mount and one bearing seat, inspect left/right orientation and verify cable clearance. Record your settings and report fit results with the part filename. A slicer project from a different revision is not a verified profile for these STLs.
 
-STEP and SolidCraft sources for the fork's UNO Q cover are in [structure/source/](../structure/source/), and a whole-robot fit-check assembly (SolidCraft and STEP) is in [structure/assembly/](../structure/assembly/). Neither folder holds print files.
+STEP and SolidCraft sources for the fork's back cover and battery-mount bosses are in [structure/source/](../structure/source/), and a whole-robot fit-check assembly (SolidCraft and STEP) is in [structure/assembly/](../structure/assembly/). Neither folder holds print files.
